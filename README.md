@@ -8,6 +8,7 @@ Production-ready static website for ELKORASHI (WPC Doors Manufacturing).
 - `assets/` — original source images (logo, favicon) kept for reference/editing.
 - `favicon.png` — site icon (also referenced inside `index.html`).
 - `ELKORASHI-Catalog.pdf` — the downloadable catalog linked from the nav, the Colors & Finishes section, and the footer. **This is a placeholder cover page** — replace it with your real designed catalog PDF, keeping the exact same filename, and every download button on the site updates automatically.
+- `assets/colors/A01.jpg` … `A010.jpg` — the 10 official door finish photos shown in the Colors & Finishes grid (optimized JPEGs, ~30–85KB each).
 - `robots.txt` — basic SEO crawler rules.
 
 No `package.json`, build tools, or server code are required — this is a static site.
