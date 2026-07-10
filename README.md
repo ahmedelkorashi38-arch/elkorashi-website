@@ -7,9 +7,17 @@ Production-ready static website for ELKORASHI (WPC Doors Manufacturing).
 - `index.html` — the complete website (single self-contained file: all CSS, JS, fonts and images are inlined, so it works fully offline with zero build step).
 - `assets/` — original source images (logo, favicon) kept for reference/editing.
 - `favicon.png` — site icon (also referenced inside `index.html`).
-- `ELKORASHI-Catalog.pdf` — the downloadable catalog linked from the nav, the Colors & Finishes section, and the footer. **This is a placeholder cover page** — replace it with your real designed catalog PDF, keeping the exact same filename, and every download button on the site updates automatically.
-- `assets/colors/A01.jpg` … `A010.jpg` — the 10 official door finish photos shown in the Colors & Finishes grid (optimized JPEGs, ~30–85KB each).
+- `assets/downloads/ELKORASHI-Catalog.pdf` — the official catalog, linked with `#page=N` deep links matching each finish code (see mapping below) from the product detail modal, and offered as a plain full download from the nav, Colors & Finishes banner, footer, and each product modal.
+- `assets/colors/A01.jpg` … `A010.jpg` — the 10 official door finish photos (optimized JPEGs, ~30–85KB each), shown in the Colors & Finishes grid and in the click-to-open product detail modal (with image zoom).
 - `robots.txt` — basic SEO crawler rules.
+
+## Catalog page mapping
+
+Each finish code deep-links to its page in the catalog PDF via "View in Catalog":
+
+A01→8, A02→9, A03→10, A04→11, A05→12, A06→5, A07→13, A08→14, A09→15, A010→16.
+
+If you replace the PDF later, update these page numbers in `ELKORASHI.dc.html`'s logic (`PAGE_MAP`) to match the new layout.
 
 No `package.json`, build tools, or server code are required — this is a static site.
 
