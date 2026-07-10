@@ -7,6 +7,7 @@ Production-ready static website for ELKORASHI (WPC Doors Manufacturing).
 - `index.html` — the complete website (single self-contained file: all CSS, JS, fonts and images are inlined, so it works fully offline with zero build step).
 - `assets/` — original source images (logo, favicon) kept for reference/editing.
 - `favicon.png` — site icon (also referenced inside `index.html`).
+- `ELKORASHI-Catalog.pdf` — the downloadable catalog linked from the nav, the Colors & Finishes section, and the footer. **This is a placeholder cover page** — replace it with your real designed catalog PDF, keeping the exact same filename, and every download button on the site updates automatically.
 - `robots.txt` — basic SEO crawler rules.
 
 No `package.json`, build tools, or server code are required — this is a static site.
